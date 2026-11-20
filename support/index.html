@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conduit – Support</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body><main>
+<nav><a href="./">Support</a><a href="../privacy/">Datenschutz</a><a class="lang" href="#english">English</a></nav>
+<h1>Conduit – Support</h1>
+<p>Fragen, Fehler oder Wünsche? Schreib an <strong>[E-Mail-Adresse]</strong>. Hilfreich sind die macOS-Version, die Conduit-Version (Conduit › Über Conduit) und eine kurze Beschreibung, was du gemacht hast.</p>
+
+<h2>Häufige Fragen</h2>
+<h3>Wie übernehme ich meine Verbindungen?</h3>
+<p>Ablage › Importieren (⇧⌘I) liest Exporte aus Remote Desktop Manager (.rdm) und die Datei <code>~/.ssh/config</code>. Mit Ablage › Netzwerk durchsuchen (⌥⌘N) findet Conduit Rechner im lokalen Netz und im Tailnet.</p>
+<h3>Wie funktioniert Tailscale in Conduit?</h3>
+<p>Unter Einstellungen › Tailscale meldest du Conduit einmal in deinem Tailnet an. Conduit nutzt diese Verbindung nur für die eigenen Sitzungen – der restliche Mac bleibt unberührt. Läuft die Tailscale-App bereits, nutzt Conduit deren Verbindung direkt.</p>
+<h3>Mein SSH-Schlüssel wird nicht akzeptiert.</h3>
+<p>Die App-Store-Version unterstützt ed25519- und ECDSA-Schlüssel (auch mit Passphrase), aber keine RSA-Schlüssel. Erzeuge in Conduit unter Bibliothek › SSH-Schlüssel einen neuen Schlüssel und hinterlege ihn auf dem Server.</p>
+<h3>Wie bekomme ich 60 fps über RDP?</h3>
+<p>Im Host-Editor unter „Weitere Einstellungen“ › „Windows für 60 fps einrichten“ setzt Conduit die nötigen Einstellungen auf dem Windows-Rechner.</p>
+<h3>Werden meine Daten synchronisiert?</h3>
+<p>Ja, über dein eigenes iCloud-Konto (Einstellungen › iCloud). Passwörter liegen im iCloud-Schlüsselbund.</p>
+
+<hr>
+<h1 id="english">Conduit – Support</h1>
+<p>Questions, bugs or ideas? Write to <strong>[email address]</strong>. Please include your macOS version, the Conduit version (Conduit › About Conduit) and a short description of what you did.</p>
+<h2>FAQ</h2>
+<h3>How do I bring over my connections?</h3>
+<p>File › Import (⇧⌘I) reads Remote Desktop Manager exports (.rdm) and <code>~/.ssh/config</code>. File › Scan Network (⌥⌘N) finds computers on your local network and tailnet.</p>
+<h3>How does Tailscale work in Conduit?</h3>
+<p>Sign Conduit in to your tailnet once under Settings › Tailscale. Conduit uses that connection only for its own sessions – the rest of your Mac is not affected. If the Tailscale app is already running, Conduit uses its connection directly.</p>
+<h3>My SSH key is not accepted.</h3>
+<p>The App Store version supports ed25519 and ECDSA keys (also with a passphrase) but not RSA keys. Create a new key under Library › SSH Keys and install it on the server.</p>
+<h3>How do I get 60 fps over RDP?</h3>
+<p>In the host editor, “More Settings” › “Set up Windows for 60 fps” applies the required settings on the Windows computer.</p>
+<h3>Is my data synced?</h3>
+<p>Yes, through your own iCloud account (Settings › iCloud). Passwords are kept in iCloud Keychain.</p>
+</main></body></html>

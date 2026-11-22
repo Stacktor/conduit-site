@@ -2,12 +2,87 @@
 <html lang="de">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Conduit</title>
+<title>Conduit – Remote-Manager für macOS</title>
+<meta name="description" content="Nativer Remote-Manager für macOS: RDP, SSH, VNC und Moonlight in Tabs, synchron über iCloud. Jetzt kostenlos per TestFlight testen.">
+<meta property="og:title" content="Conduit – Remote-Manager für macOS (Beta)">
+<meta property="og:description" content="RDP, SSH, VNC und Moonlight in einer nativen Mac-App. Jetzt kostenlos per TestFlight testen.">
+<meta property="og:image" content="https://stacktor.github.io/conduit-site/img/1-hosts.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
-<body><main>
+<body><main class="wide">
+<nav><a href="support/">Support</a><a href="privacy/">Datenschutz</a><a class="lang" href="#english">English</a></nav>
+
+<header class="hero">
+  <img class="appicon" src="img/icon.png" alt="" width="128" height="128">
+  <h1>Conduit</h1>
+  <p class="lead">Alle deine Rechner in einer nativen Mac-App – RDP, SSH, VNC und Moonlight, als Tabs, synchron über iCloud.</p>
+  <p class="cta">
+    <a class="button primary" href="https://testflight.apple.com/join/eyB4vE8p">Kostenlos testen (TestFlight)</a>
+    <a class="button" href="https://discord.gg/nNFvEdnzgF">Discord-Community</a>
+  </p>
+  <p class="muted small">Öffentliche Beta · benötigt macOS 26 · kostenlos während der Testphase</p>
+</header>
+
+<img class="shot" src="img/2-rdp-host.jpg" alt="Conduit mit Host-Liste und RDP-Host im Editor" loading="lazy">
+
+<h2>So machst du mit</h2>
+<ol class="steps">
+  <li><b>Auf dem Mac</b> <a href="https://apps.apple.com/app/testflight/id899247664">TestFlight aus dem App Store</a> laden.</li>
+  <li>Den <a href="https://testflight.apple.com/join/eyB4vE8p">Einladungslink</a> <b>auf dem Mac</b> öffnen und „Annehmen“ klicken.</li>
+  <li>In TestFlight bei Conduit auf <b>„Installieren“</b> klicken – fertig. Updates kommen automatisch.</li>
+</ol>
+<p class="muted small">Wichtig: Conduit gibt es nur für den Mac. Wenn du den Link auf dem iPhone öffnest, bist du zwar eingetragen, kannst aber nichts installieren – dann einfach TestFlight auf dem Mac öffnen.</p>
+
+<h2>Was Conduit kann</h2>
+<div class="grid">
+  <div><h3>Alles in Tabs</h3><p>RDP, VNC und Terminal öffnen als Tabs. Einen Tab herausziehen macht ihn zum eigenen Fenster – die Verbindung bleibt bestehen.</p></div>
+  <div><h3>RDP, SSH, VNC, Moonlight</h3><p>Ein Ort für Windows-PCs, Server, Raspberry Pis, NAS und Spiele-PCs. Mehrere Monitore, Vollbild, SFTP, Port-Weiterleitungen.</p></div>
+  <div><h3>Tailscale &amp; WireGuard</h3><p>Erkennt Tailscale-Geräte, wählt die passende Route und baut Tunnel bei Bedarf selbst auf.</p></div>
+  <div><h3>Wake-on-LAN</h3><p>Rechner wecken, ausschalten oder neu starten – auch von unterwegs über ein Gerät im Heimnetz.</p></div>
+  <div><h3>Umstieg in Sekunden</h3><p>Hosts aus Remote Desktop Manager mit ⌘C/⌘V übernehmen, .rdp-Dateien und ~/.ssh/config importieren.</p></div>
+  <div><h3>Privat by Design</h3><p>Passwörter im Schlüsselbund, Sync über deine iCloud. Keine Werbung, kein Tracking, kein Konto.</p></div>
+</div>
+
+<div class="shots">
+  <img src="img/1-hosts.jpg" alt="Host-Liste mit Gruppen und Online-Status" loading="lazy">
+  <img src="img/3-new-tab.jpg" alt="Neuer Tab mit Host-Suche" loading="lazy">
+</div>
+
+<h2>Feedback</h2>
+<p>Bugs und Ideen am liebsten im <a href="https://discord.gg/nNFvEdnzgF">Discord</a> (Foren #bugs und #feature-wünsche) oder direkt in TestFlight über „Beta-Feedback senden“. Jeder neue Build wird dort angekündigt.</p>
+
+<hr>
+
+<section id="english">
 <h1>Conduit</h1>
-<p class="muted">Nativer Remote-Manager für macOS – RDP, SSH, VNC und Moonlight, synchron über iCloud.<br>
-Native remote manager for macOS – RDP, SSH, VNC and Moonlight, synced with iCloud.</p>
-<nav><a href="support/">Support</a><a href="privacy/">Datenschutz / Privacy</a></nav>
+<p class="lead">All your machines in one native Mac app – RDP, SSH, VNC and Moonlight, in tabs, synced with iCloud.</p>
+<p class="cta">
+  <a class="button primary" href="https://testflight.apple.com/join/eyB4vE8p">Try it free (TestFlight)</a>
+  <a class="button" href="https://discord.gg/nNFvEdnzgF">Discord community</a>
+</p>
+<p class="muted small">Public beta · requires macOS 26 · free during the beta · English and German</p>
+
+<h2>How to join</h2>
+<ol class="steps">
+  <li><b>On your Mac</b>, get <a href="https://apps.apple.com/app/testflight/id899247664">TestFlight from the App Store</a>.</li>
+  <li>Open the <a href="https://testflight.apple.com/join/eyB4vE8p">invite link</a> <b>on your Mac</b> and click “Accept”.</li>
+  <li>Click <b>“Install”</b> next to Conduit in TestFlight. Updates arrive automatically.</li>
+</ol>
+<p class="muted small">Conduit is Mac-only. If you opened the link on your iPhone you're signed up but can't install there – just open TestFlight on your Mac.</p>
+
+<h2>Highlights</h2>
+<div class="grid">
+  <div><h3>Everything in tabs</h3><p>RDP, VNC and terminal sessions open as tabs. Drag one out to get its own window – the connection stays up.</p></div>
+  <div><h3>RDP, SSH, VNC, Moonlight</h3><p>One place for Windows PCs, servers, Raspberry Pis, NAS boxes and gaming PCs. Multi-monitor, full screen, SFTP, port forwarding.</p></div>
+  <div><h3>Tailscale &amp; WireGuard</h3><p>Finds Tailscale devices, picks the right route and brings tunnels up on demand.</p></div>
+  <div><h3>Wake-on-LAN</h3><p>Wake, shut down or restart machines – even from the road, relayed through a device at home.</p></div>
+  <div><h3>Switch in seconds</h3><p>Copy hosts out of Remote Desktop Manager with ⌘C/⌘V, import .rdp files and ~/.ssh/config.</p></div>
+  <div><h3>Private by design</h3><p>Passwords in your Keychain, sync through your iCloud. No ads, no tracking, no account.</p></div>
+</div>
+<p>Found a bug or have an idea? Join the <a href="https://discord.gg/nNFvEdnzgF">Discord</a> or use “Send Beta Feedback” in TestFlight.</p>
+</section>
+
+<footer class="muted small"><a href="support/">Support</a> · <a href="privacy/#english">Privacy</a></footer>
 </main></body></html>

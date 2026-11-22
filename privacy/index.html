@@ -8,10 +8,11 @@
 <body><main>
 <nav><a href="../support/">Support</a><a href="./">Datenschutz</a><a class="lang" href="#english">English</a></nav>
 <h1>Datenschutzerklärung</h1>
-<p class="muted">Conduit für macOS · Stand: 21. November 2026</p>
+<p class="muted">Conduit für macOS · Stand: 22. November 2026</p>
 
 <h2>Kurz gesagt</h2>
-<p>Conduit erhebt keine personenbezogenen Daten. Es gibt keinen Server von uns, kein Benutzerkonto, keine Werbung, kein Tracking und keine Analyse.</p>
+<p>Conduit hat keinen eigenen Server, kein Benutzerkonto, keine Werbung und kein Tracking. Deine Hosts, Zugangsdaten und Sitzungen verlassen deinen Mac nur in Richtung deiner eigenen Rechner und – falls aktiviert – deiner eigenen iCloud.</p>
+<p>Damit wir Conduit verbessern können, sendet die App eine <strong>anonyme Nutzungsstatistik</strong> an TelemetryDeck (Server in Deutschland) – ohne Hostnamen, Adressen, Benutzernamen oder Zugangsdaten. Du kannst sie jederzeit abschalten: Einstellungen › Allgemein › „Anonyme Nutzungsstatistik senden“.</p>
 
 <h2>Verantwortlicher</h2>
 <p>Thomas Graf<br>Erlhorst 15<br>27753 Delmenhorst<br><a href="mailto:thomas.grf@protonmail.com">thomas.grf@protonmail.com</a></p>
@@ -20,29 +21,53 @@
 <ul>
 <li><strong>Verbindungsdaten</strong> (Hosts, Adressen, Gruppen, Einstellungen) speichert Conduit lokal auf deinem Mac. Ist iCloud aktiviert, synchronisiert Apple diese Daten über die <em>private</em> iCloud-Datenbank deines eigenen Apple-Kontos zwischen deinen Geräten. Wir haben darauf keinen Zugriff.</li>
 <li><strong>Passwörter und private Schlüssel</strong> liegen ausschließlich im Schlüsselbund von macOS bzw. im iCloud-Schlüsselbund.</li>
-<li><strong>Netzwerkverbindungen</strong> baut Conduit nur zu den Rechnern auf, die du selbst angibst oder bei „Netzwerk durchsuchen“ im lokalen Netz findest. Für Tailscale verbindet sich Conduit mit dem Koordinationsserver von Tailscale (tailscale.com); dort gilt die Datenschutzerklärung von Tailscale.</li>
+<li><strong>Netzwerkverbindungen</strong> baut Conduit nur zu den Rechnern auf, die du selbst angibst oder bei „Netzwerk durchsuchen“ im lokalen Netz findest. Das gilt auch für Wake-on-LAN, das Ermitteln der MAC-Adresse und die Befehle zum Ausschalten oder Neustarten: Sie gehen nur an deine eigenen Rechner. Für Tailscale verbindet sich Conduit mit dem Koordinationsserver von Tailscale (tailscale.com); dort gilt die Datenschutzerklärung von Tailscale.</li>
 <li><strong>Sitzungsprotokolle</strong> (optional, pro Host einschaltbar) bleiben lokal auf deinem Mac.</li>
-<li><strong>Absturzberichte</strong> sendet macOS nur dann an Apple, wenn du dem in den Systemeinstellungen zugestimmt hast; Apple stellt sie Entwicklern anonymisiert bereit.</li>
+<li><strong>Absturzberichte</strong> sendet macOS nur dann an Apple, wenn du dem in den Systemeinstellungen zugestimmt hast; Apple stellt sie Entwicklern anonymisiert bereit. Zusätzlich speichert Conduit Absturz- und Hänger-Diagnosen, die macOS bereitstellt, lokal auf deinem Mac. Sie werden nur verschickt, wenn du sie beim Feedback selbst mitsendest.</li>
+<li><strong>Feedback</strong> („Hilfe › Feedback senden“) öffnet dein eigenes Mail-Programm. Du siehst und entscheidest, was du schickst. Wir nutzen deine E-Mail nur, um dein Anliegen zu bearbeiten, und löschen sie auf Wunsch.</li>
+<li><strong>TestFlight:</strong> Testest du eine Beta über TestFlight, gelten zusätzlich die Bedingungen von Apple. Was du über TestFlight sendest (Feedback, Screenshots, Absturzberichte), stellt Apple uns zur Verfügung.</li>
+</ul>
+
+<h2>Anonyme Nutzungsstatistik (TelemetryDeck)</h2>
+<p>Anbieter ist die TelemetryDeck GmbH, Augsburg (Deutschland); die Daten werden auf Servern in Deutschland verarbeitet. TelemetryDeck verarbeitet die Daten in unserem Auftrag.</p>
+<ul>
+<li><strong>Was gesendet wird:</strong> Ereignisse wie „App gestartet“, „Verbindung gestartet“ oder „Verbindung fehlgeschlagen“ – jeweils nur mit dem Protokoll (z. B. RDP, SSH, VNC) und dem Verbindungsweg (z. B. direkt oder Tailscale) –, „Wake-on-LAN genutzt“ und „Energiebefehl gesendet“. Dazu technische Angaben: App-Version, macOS-Version, Mac-Modell, Prozessorarchitektur, Sprache, Region, Zeitzone, Bildschirmauflösung, ausgewählte Bedienungshilfen-Einstellungen sowie Anzahl und Dauer der Sitzungen.</li>
+<li><strong>Was nie gesendet wird:</strong> Hostnamen, IP- oder MAC-Adressen deiner Rechner, Benutzernamen, Passwörter, Schlüssel und Inhalte deiner Sitzungen.</li>
+<li><strong>Pseudonym:</strong> Conduit erzeugt eine zufällige Kennung, die nur auf deinem Mac gespeichert ist. Gesendet wird ausschließlich ein Hashwert davon. So lassen sich Ereignisse zählen, ohne dass wir oder TelemetryDeck wissen, wer du bist. Nach Angaben von TelemetryDeck werden keine IP-Adressen zu den Ereignissen gespeichert.</li>
+<li><strong>Rechtsgrundlage:</strong> unser berechtigtes Interesse, Conduit stabil und nützlich zu machen (Art. 6 Abs. 1 lit. f DSGVO).</li>
+<li><strong>Abschalten:</strong> Einstellungen › Allgemein › „Anonyme Nutzungsstatistik senden“. Danach sendet Conduit keine Ereignisse mehr.</li>
 </ul>
 
 <h2>Deine Rechte</h2>
-<p>Da wir keine personenbezogenen Daten speichern, können wir keine Auskunft über gespeicherte Daten geben – es gibt keine. Daten in deinem iCloud-Konto löschst du, indem du Hosts in Conduit löschst oder unter Systemeinstellungen › Apple-Konto › iCloud die Daten von Conduit entfernst. Für Fragen erreichst du uns unter der oben genannten Adresse.</p>
+<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Die Nutzungsstatistik ist pseudonym; wir können sie dir nicht zuordnen und daher auch keine Auskunft dazu geben. Daten in deinem iCloud-Konto löschst du, indem du Hosts in Conduit löschst oder unter Systemeinstellungen › Apple-Konto › iCloud die Daten von Conduit entfernst. Für Fragen erreichst du uns unter der oben genannten Adresse.</p>
 
 <hr>
 <h1 id="english">Privacy Policy</h1>
-<p class="muted">Conduit for macOS · Last updated: November 21, 2026</p>
+<p class="muted">Conduit for macOS · Last updated: November 22, 2026</p>
 <h2>In short</h2>
-<p>Conduit does not collect personal data. There is no server of ours, no user account, no ads, no tracking and no analytics.</p>
+<p>Conduit has no server of its own, no user account, no ads and no tracking. Your hosts, credentials and sessions only ever leave your Mac towards your own computers and – if enabled – your own iCloud.</p>
+<p>To help us improve Conduit, the app sends <strong>anonymous usage statistics</strong> to TelemetryDeck (servers in Germany) – without host names, addresses, user names or credentials. You can turn this off at any time: Settings › General › “Send anonymous usage statistics”.</p>
 <h2>Controller</h2>
 <p>Thomas Graf<br>Erlhorst 15<br>27753 Delmenhorst, Germany<br><a href="mailto:thomas.grf@protonmail.com">thomas.grf@protonmail.com</a></p>
 <h2>What the app processes</h2>
 <ul>
 <li><strong>Connection data</strong> (hosts, addresses, groups, settings) is stored locally on your Mac. With iCloud enabled, Apple syncs it between your devices through the <em>private</em> iCloud database of your own Apple Account. We have no access to it.</li>
 <li><strong>Passwords and private keys</strong> are stored only in the macOS keychain or iCloud Keychain.</li>
-<li><strong>Network connections</strong> are made only to computers you enter yourself or find with “Scan Network” on your local network. For Tailscale, Conduit connects to Tailscale's coordination server (tailscale.com); Tailscale's privacy policy applies there.</li>
+<li><strong>Network connections</strong> are made only to computers you enter yourself or find with “Scan Network” on your local network. This includes Wake-on-LAN, looking up a MAC address and the shut down or restart commands: they only go to your own computers. For Tailscale, Conduit connects to Tailscale's coordination server (tailscale.com); Tailscale's privacy policy applies there.</li>
 <li><strong>Session logs</strong> (optional, per host) stay on your Mac.</li>
-<li><strong>Crash reports</strong> are sent to Apple by macOS only if you have agreed in System Settings; Apple shares them with developers anonymously.</li>
+<li><strong>Crash reports</strong> are sent to Apple by macOS only if you have agreed in System Settings; Apple shares them with developers anonymously. Conduit also keeps the crash and hang diagnostics that macOS provides locally on your Mac. They are only sent if you attach them to feedback yourself.</li>
+<li><strong>Feedback</strong> (“Help › Send Feedback”) opens your own mail app. You see and decide what you send. We use your email only to handle your request and delete it on request.</li>
+<li><strong>TestFlight:</strong> if you test a beta through TestFlight, Apple's terms apply as well. Whatever you send through TestFlight (feedback, screenshots, crash reports) is made available to us by Apple.</li>
+</ul>
+<h2>Anonymous usage statistics (TelemetryDeck)</h2>
+<p>The provider is TelemetryDeck GmbH, Augsburg, Germany; data is processed on servers in Germany. TelemetryDeck processes the data on our behalf.</p>
+<ul>
+<li><strong>What is sent:</strong> events such as “app launched”, “connection started” or “connection failed” – only with the protocol (e.g. RDP, SSH, VNC) and the route type (e.g. direct or Tailscale) –, “Wake-on-LAN used” and “power command sent”. Plus technical details: app version, macOS version, Mac model, processor architecture, language, region, time zone, screen resolution, selected accessibility settings, and the number and length of sessions.</li>
+<li><strong>What is never sent:</strong> host names, IP or MAC addresses of your computers, user names, passwords, keys or the content of your sessions.</li>
+<li><strong>Pseudonym:</strong> Conduit creates a random identifier that is stored only on your Mac. Only a hash of it is sent. This lets us count events without us or TelemetryDeck knowing who you are. According to TelemetryDeck, no IP addresses are stored with the events.</li>
+<li><strong>Legal basis:</strong> our legitimate interest in making Conduit stable and useful (Art. 6(1)(f) GDPR).</li>
+<li><strong>Turning it off:</strong> Settings › General › “Send anonymous usage statistics”. Conduit then stops sending events.</li>
 </ul>
 <h2>Your rights</h2>
-<p>We store no personal data, so there is nothing to disclose. You delete data in your iCloud account by deleting hosts in Conduit or by removing Conduit's data in System Settings › Apple Account › iCloud. Contact us at the address above with any questions.</p>
+<p>You have the right of access, rectification, erasure, restriction of processing, data portability and objection, and the right to lodge a complaint with a data protection supervisory authority. The usage statistics are pseudonymous; we cannot link them to you and therefore cannot provide information about them. You delete data in your iCloud account by deleting hosts in Conduit or by removing Conduit's data in System Settings › Apple Account › iCloud. Contact us at the address above with any questions.</p>
 </main></body></html>
